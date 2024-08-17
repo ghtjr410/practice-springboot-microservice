@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### 사용자 정의
+/mysql
+/.idea
