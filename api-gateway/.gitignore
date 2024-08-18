@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### 사용자정의
+volume-data/
