@@ -15,6 +15,11 @@ public class InventoryController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public boolean isInStock(@RequestParam String skuCode, @RequestParam Integer quantity) {
+//                try{
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e){
+//            throw new RuntimeException(e);
+//        }
         return inventoryService.isInStock(skuCode, quantity);
     }
 }
