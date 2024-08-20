@@ -1,4 +1,4 @@
-package com.ghtjr.microservices.order.dto;
+package com.ghtjr.microservices.order.event.dto;
 
 import java.math.BigDecimal;
 

@@ -1,4 +1,4 @@
-package com.ghtjr.microservices.order.stubs;
+package com.ghtjr.microservices.order.event.stubs;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;

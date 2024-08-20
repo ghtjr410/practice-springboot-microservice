@@ -1,10 +1,10 @@
-package com.ghtjr.microservices.order.servcie;
+package com.ghtjr.microservices.order.event.servcie;
 
-import com.ghtjr.microservices.order.client.InventoryClient;
-import com.ghtjr.microservices.order.dto.OrderRequest;
-import com.ghtjr.microservices.order.event.OrderPlacedEvent;
-import com.ghtjr.microservices.order.model.Order;
-import com.ghtjr.microservices.order.repository.OrderRepository;
+import com.ghtjr.microservices.order.event.client.InventoryClient;
+import com.ghtjr.microservices.order.event.dto.OrderRequest;
+import com.ghtjr.microservices.order.event.event.OrderPlacedEvent;
+import com.ghtjr.microservices.order.event.model.Order;
+import com.ghtjr.microservices.order.event.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;

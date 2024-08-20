@@ -1,4 +1,4 @@
-package com.ghtjr.microservices.order.client;
+package com.ghtjr.microservices.order.event.client;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;

@@ -1,6 +1,6 @@
-package com.ghtjr.microservices.order;
+package com.ghtjr.microservices.order.event;
 
-import com.ghtjr.microservices.order.stubs.InventoryClientStub;
+import com.ghtjr.microservices.order.event.stubs.InventoryClientStub;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

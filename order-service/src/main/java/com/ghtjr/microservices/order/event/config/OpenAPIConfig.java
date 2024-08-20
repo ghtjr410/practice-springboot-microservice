@@ -1,4 +1,4 @@
-package com.ghtjr.microservices.order.config;
+package com.ghtjr.microservices.order.event.config;
 
 import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
