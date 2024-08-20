@@ -16,7 +16,8 @@ import java.util.UUID;
 @RequiredArgsConstructor
 @Slf4j
 public class OrderService {
-
+//todo: Product의 skuCode와 name 그리고 Inventory의 skuCode의 연관관계를 다시 살펴봐야댐 지금은 임시처방했음 kafka 연결확인이 우선이라
+    
     private final OrderRepository orderRepository;
     private final InventoryClient inventoryClient;
     private final KafkaTemplate<String, OrderPlacedEvent> kafkaTemplate;
