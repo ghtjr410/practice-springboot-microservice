@@ -1,6 +1,6 @@
-package com.ghtjr.microservices.order.event.config;
+package com.ghtjr.microservices.order.config;
 
-import com.ghtjr.microservices.order.event.client.InventoryClient;
+import com.ghtjr.microservices.order.client.InventoryClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.ClientHttpRequestFactories;
 import org.springframework.boot.web.client.ClientHttpRequestFactorySettings;

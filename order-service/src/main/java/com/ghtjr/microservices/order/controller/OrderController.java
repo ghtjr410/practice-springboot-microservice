@@ -1,7 +1,7 @@
-package com.ghtjr.microservices.order.event.controller;
+package com.ghtjr.microservices.order.controller;
 
-import com.ghtjr.microservices.order.event.dto.OrderRequest;
-import com.ghtjr.microservices.order.event.servcie.OrderService;
+import com.ghtjr.microservices.order.dto.OrderRequest;
+import com.ghtjr.microservices.order.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

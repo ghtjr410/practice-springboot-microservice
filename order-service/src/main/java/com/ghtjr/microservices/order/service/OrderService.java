@@ -1,10 +1,10 @@
-package com.ghtjr.microservices.order.event.servcie;
+package com.ghtjr.microservices.order.service;
 
-import com.ghtjr.microservices.order.event.client.InventoryClient;
-import com.ghtjr.microservices.order.event.dto.OrderRequest;
-import com.ghtjr.microservices.order.event.event.OrderPlacedEvent;
-import com.ghtjr.microservices.order.event.model.Order;
-import com.ghtjr.microservices.order.event.repository.OrderRepository;
+import com.ghtjr.microservices.order.client.InventoryClient;
+import com.ghtjr.microservices.order.dto.OrderRequest;
+import com.ghtjr.microservices.order.event.OrderPlacedEvent;
+import com.ghtjr.microservices.order.model.Order;
+import com.ghtjr.microservices.order.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -35,7 +35,11 @@ public class OrderService {
 
             // Kafka Topic 에 메세지를 전송
             // orderNumber, email
-            OrderPlacedEvent orderPlacedEvent = new OrderPlacedEvent(order.getOrderNumber(), orderRequest.userDetails().email());
+            OrderPlacedEvent orderPlacedEvent = new OrderPlacedEvent();
+            orderPlacedEvent.setOrderNumber(order.getOrderNumber());
+            orderPlacedEvent.setEmail(orderRequest.userDetails().email());
+            orderPlacedEvent.setFirstName(orderRequest.userDetails().firstName());
+            orderPlacedEvent.setLastName(orderRequest.userDetails().lastName());
             log.info("Start - Sending OrderPlacedEvent {} to Kafka topic order-placed", orderPlacedEvent);
             kafkaTemplate.send("order-placed", orderPlacedEvent);
             log.info("End - Sending OrderPlacedEvent {} to Kafka topic order-placed", orderPlacedEvent);

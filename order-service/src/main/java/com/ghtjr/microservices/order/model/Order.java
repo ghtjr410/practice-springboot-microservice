@@ -1,4 +1,4 @@
-package com.ghtjr.microservices.order.event.model;
+package com.ghtjr.microservices.order.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
