@@ -34,3 +34,4 @@ build/
 
 ### 사용자정의
 volume-data/
+docker/tempo/tempo-data/
