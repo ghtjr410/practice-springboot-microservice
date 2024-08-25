@@ -11,4 +11,9 @@ public class ObservationConfig {
     ObservedAspect observedAspect(ObservationRegistry registry) {
         return new ObservedAspect(registry);
     }
+
+    @Bean
+    public ObservationRegistry observationRegistry() {
+        return ObservationRegistry.create();
+    }
 }
