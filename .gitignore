@@ -1,3 +1,7 @@
 ### 사용자정
 target
 .idea
+data
+volume-data
+docker/tempo/tempo-data
+mysql
