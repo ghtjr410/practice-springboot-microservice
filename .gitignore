@@ -5,3 +5,4 @@ data
 volume-data
 docker/tempo/tempo-data
 mysql
+settings.xml
